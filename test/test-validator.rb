@@ -80,7 +80,7 @@ class ValidatorTest < Test::Unit::TestCase
   def _test_by_syck_parser(validator, input, expected)
     document = YAML.load(input)
     error_list  = validator.validate(document)
-    expected = expected.to_a.sort.join()
+    expected = expected.lines.to_a.sort.join()
     actual = error_list.collect { |e|
       "%-20s: [%s] %s\n" % [e.error_symbol.inspect, e.path, e.message]
     }.sort.join()
