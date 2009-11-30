@@ -1244,13 +1244,13 @@ input: |
 #
 expected*:
   ruby: |
-    {"sequence"=>
+    {"type"=>"seq",
+     "sequence"=>
       [{"type"=>"map",
         "mapping"=>
          {"name"=>{"type"=>"str"},
           "post"=>{"type"=>"str", "enum"=>["exective", "manager", "clerk"]},
-          "supervisor"=>{...}}}],
-     "type"=>"seq"}
+          "supervisor"=>{...}}}]}
   java: |
     {"sequence"=>[{"mapping"=>{"name"=>{"type"=>"str"}, "post"=>{"enum"=>["exective", "manager", "clerk"], "type"=>"str"}, "supervisor"=>{...}}, "type"=>"map"}], "type"=>"seq"}
 locations:
