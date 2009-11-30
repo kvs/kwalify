@@ -1565,7 +1565,7 @@ input: |
   - :sym
 expected*:
   ruby: |
-    ["abc", 123, 3.14, true, false, true, false, nil, nil, "123", "456", #<Date: 4906743/2,0,2299161>, :sym]
+    ["abc", 123, 3.14, true, false, true, false, nil, nil, "123", "456", #<Date: 2005-01-01 (4906743/2,0,2299161)>, :sym]
 #  ruby: |
 #    ["abc",
 #     123,
