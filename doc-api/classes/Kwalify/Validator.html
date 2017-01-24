@@ -89,7 +89,7 @@ ex1. <a href="Validator.html#M000076">validate</a> yaml document
   schema = YAML.load_file('schema.yaml')
   validator = Kwalify::Validator.new(schema)
   document = YAML.load_file('document.yaml')
-  erros = validator.validate(document)
+  errors = validator.validate(document)
   if errors &amp;&amp; !errors.empty?
     errors.each do |err|
       puts &quot;- [#{err.path}] #{err.message}&quot;
